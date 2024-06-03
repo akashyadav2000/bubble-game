@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image" href="website-logo.png" />
+    <title>Bubble Game</title>
+    <script
+      src="https://kit.fontawesome.com/c1922a9926.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <sapn id="title">The Bubble Game</sapn>
+      <div class="panel">
+        <div class="ptop">
+          <div class="combine">
+            <h1>Find</h1>
+            <div id="hit" class="inbox">0</div>
+          </div>
+          <div class="combine">
+            <h1>Timer</h1>
+            <div id="time" class="inbox">0</div>
+          </div>
+          <div class="combine">
+            <h1>Score</h1>
+            <div id="score" class="inbox">0</div>
+          </div>
+          <div class="exit">&times;</div>
+        </div>
+        <div class="pbottom">
+          <div class="btn" onclick="start()">
+            <a class="play-btn">
+              Play Bubble Game
+              <i class="fa-solid fa-angle-right angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <audio id="myAudio" src="sound.mp3"></audio>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
